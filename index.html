@@ -69,14 +69,11 @@ h1{font-size:clamp(45px,6vw,72px);line-height:1.03;margin:20px 0;letter-spacing:
 .mistakes-panel{margin-top:18px;background:#fff;border-radius:16px;padding:16px;color:#152033}.mistakes-panel h3{margin:0 0 12px}.mistake-item{border-top:1px solid #eef2f6;padding:13px 0}.mistake-item:first-of-type{border-top:0}.mistake-answers{margin-top:7px;font-size:13px;color:#475467}.mistake-explanation{margin-top:8px;background:#f5f8fc;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.5}.perfect-panel{margin-top:18px;background:#eaf8f0;color:#12683f;padding:14px;border-radius:12px;font-weight:800}
 .dashboard-page{background:#f4f7fb;color:#152033;padding:55px 5%;min-height:70vh}.dashboard-wrap{max-width:1000px;margin:auto}.dashboard-hero{background:linear-gradient(135deg,#071a38,#173b78);color:#fff;border-radius:26px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px;box-shadow:0 14px 40px #071a3820}.dashboard-hero h2{font-size:32px;margin:8px 0}.dashboard-hero p{margin:0;color:#d7e4ff}.dash-level{background:#fff;color:#173b78;border-radius:18px;padding:18px 22px;font-size:24px;font-weight:900;white-space:nowrap}.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.dash-stat{background:#fff;border:1px solid #dce3ed;border-radius:18px;padding:17px;text-align:center;box-shadow:0 7px 24px #15203308}.dash-stat b{display:block;font-size:27px}.dash-stat span{font-size:12px;color:#667085}.dash-panel{background:#fff;border:1px solid #dce3ed;border-radius:20px;padding:20px;margin-bottom:16px}.dash-panel h3{margin:0 0 14px}.dash-bar{height:12px;background:#e8edf4;border-radius:20px;overflow:hidden}.dash-bar i{display:block;height:100%;background:#1d68ff;border-radius:20px}.dash-test-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #eef2f6}.dash-test-row:first-child{border-top:0}.dash-test-row small{color:#667085}.weak-topic{display:flex;align-items:center;gap:10px;margin:9px 0}.weak-topic span{width:125px;font-size:13px;font-weight:800}.weak-topic .wt-bar{flex:1;height:9px;background:#edf1f5;border-radius:20px;overflow:hidden}.weak-topic i{display:block;height:100%;background:#e05252}.empty-dash{color:#667085;text-align:center;padding:12px}.dash-pwa{display:flex;justify-content:space-between;align-items:center;gap:15px}.dash-pwa button{border:0;background:#1d68ff;color:#fff;border-radius:11px;padding:11px 15px;font-weight:900;cursor:pointer}@media(max-width:700px){.dash-grid{grid-template-columns:1fr 1fr}.dashboard-hero{display:block}.dash-level{display:inline-block;margin-top:16px}.dash-test-row{display:block}.dash-test-row strong{display:block;margin-top:4px}.dash-pwa{display:block}.dash-pwa button{margin-top:10px}}
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="./supabase_config.js"></script>
-<style id="supabase-premium-css">
-.premium-page{background:#f4f7fb;color:#152033;padding:50px 5%;min-height:70vh}.premium-wrap{max-width:1050px;margin:auto}.premium-hero{background:linear-gradient(135deg,#071a38,#173b78);color:#fff;border-radius:26px;padding:28px;margin-bottom:20px}.premium-hero h2{margin:8px 0;font-size:32px}.premium-hero p{color:#d7e4ff}.premium-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.premium-card{background:#fff;border:1px solid #dce3ed;border-radius:20px;padding:20px;box-shadow:0 8px 28px #15203310}.premium-card h3{margin:0 0 8px;color:#173b78}.premium-card p{color:#667085;line-height:1.5}.premium-price{font-size:24px;font-weight:900;color:#1d68ff;margin:14px 0}.premium-btn{border:0;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer;background:#1d68ff;color:#fff}.premium-btn.alt{background:#edf3ff;color:#1d68ff}.premium-btn.danger{background:#ffe9e9;color:#b42318}.premium-status{font-size:12px;font-weight:800;color:#667085;margin:10px 0}.online-modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;z-index:99999;padding:18px}.online-card{width:min(460px,100%);background:#fff;color:#152033;border-radius:22px;padding:24px;box-shadow:0 25px 90px #0007}.online-card h3{margin:0 0 8px}.online-card label{display:block;font-weight:700;font-size:13px;margin-top:12px}.online-card input,.online-card select{width:100%;padding:12px;border:1px solid #ccd5e3;border-radius:10px;margin-top:6px;font-size:15px}.online-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.online-error{color:#b42318;font-size:13px;margin-top:10px}.receipt-modal .online-card{max-width:500px}.account-pill{display:inline-flex;align-items:center;gap:8px;background:#edf3ff;color:#173b78;padding:9px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-top:10px}
-@media(max-width:650px){.premium-page{padding:35px 4%}.premium-hero h2{font-size:26px}}
+<style id="premium-questions-css">
+.premium-page{background:linear-gradient(180deg,#f5f8ff,#eef3fa);color:#152033;padding:48px 5%;min-height:72vh}.premium-wrap{max-width:1050px;margin:auto}.premium-hero{background:linear-gradient(135deg,#071a38,#173b78);color:#fff;border-radius:28px;padding:30px;margin-bottom:20px;box-shadow:0 18px 50px #071a3825}.premium-hero h2{margin:8px 0 10px;font-size:32px}.premium-hero p{color:#dce7ff;line-height:1.6;margin:0}.premium-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:stretch}.premium-card{background:#fff;border:1px solid #dce3ed;border-radius:22px;padding:22px;box-shadow:0 10px 30px #15203310}.premium-card h3{margin:0 0 8px;color:#173b78}.premium-card p{color:#667085;line-height:1.55}.premium-price{font-size:25px;font-weight:900;color:#1d68ff;margin:12px 0}.premium-test-list{display:grid;gap:12px;margin-top:16px}.premium-test-item{display:flex;align-items:center;gap:13px;border:1px solid #e1e7ef;border-radius:16px;padding:15px;background:#fbfcfe}.premium-test-icon{width:45px;height:45px;border-radius:13px;background:#edf3ff;display:grid;place-items:center;font-size:21px;flex:none}.premium-test-item b{display:block;color:#172b4d}.premium-test-item span{font-size:12px;color:#667085}.payment-box{background:linear-gradient(135deg,#fff,#f7faff);border:2px solid #d9e6ff}.card-number{font-size:22px;letter-spacing:1.5px;font-weight:900;color:#173b78;background:#eef4ff;border-radius:14px;padding:16px;margin:14px 0;word-break:break-all}.copy-card-btn{border:0;background:#1d68ff;color:#fff;border-radius:12px;padding:12px 16px;font-weight:900;cursor:pointer}.phone-box{margin-top:16px;background:#fff4e8;border:1px solid #ffd8aa;border-radius:15px;padding:15px}.phone-box strong{color:#9a4d00;font-size:18px}.payment-steps{display:grid;gap:10px;margin-top:14px}.payment-step{display:flex;gap:10px;align-items:flex-start}.step-num{width:28px;height:28px;border-radius:50%;background:#173b78;color:#fff;display:grid;place-items:center;font-weight:900;flex:none}.premium-note{margin-top:18px;padding:13px 15px;background:#eef8f1;border-radius:13px;color:#17643d;font-weight:700}.premium-back{margin-bottom:15px}@media(max-width:750px){.premium-layout{grid-template-columns:1fr}.premium-hero h2{font-size:27px}.card-number{font-size:18px;letter-spacing:1px}}
 </style></head><body>
 <nav><div class="logo">🎓 Presidential English<small>Prepare • Practice • Succeed</small></div>
-<div class="links"><a href="#home">Home</a><a href="#learning-menu" onclick="showLearning()">Grammar Practice</a><a href="#vocabulary">Vocabulary</a><a href="#games">Games</a><a href="#dashboard" onclick="showDashboard();return false;">Progress</a><a href="#premium-page" onclick="openPremium();return false;">Premium</a><a href="#teacher-dashboard" onclick="showTeacherDashboard();return false;">Teacher</a></div></nav>
+<div class="links"><a href="#home">Home</a><a href="#learning-menu" onclick="showLearning()">Grammar Practice</a><a href="#vocabulary">Vocabulary</a><a href="#games">Games</a><a href="#dashboard" onclick="showDashboard();return false;">Progress</a><a href="#premium-page" onclick="openPremium();return false;">Imtihon savollari‼️</a><a href="#teacher-dashboard" onclick="showTeacherDashboard();return false;">Teacher</a></div></nav>
 <section class="hero" id="home"><div class="wrap"><div class="grid"><div>
 <div class="eyebrow">PREZIDENT MAKTABLARIGA TAYYORLOV</div>
 <h1>Prezident maktablari imtihoniga <span>birgalikda tayyorlanamiz.</span></h1>
@@ -775,57 +772,40 @@ updateGameHeader();
 
 <section id="premium-page" class="premium-page" style="display:none">
   <div class="premium-wrap">
-    <button class="back-home" onclick="showHome()">← Bosh sahifa</button>
+    <button class="back-home premium-back" onclick="showHome()">← Bosh sahifa</button>
     <div class="premium-hero">
-      <span class="quiz-badge">🔐 PREMIUM TESTLAR</span>
-      <h2>Prezident maktablari va maxsus testlar</h2>
-      <p>Har bir premium test — 30 000 so‘m. To‘lovni karta orqali amalga oshirib, chekni yuborasiz. Admin tasdiqlagach test avtomatik ochiladi.</p>
-      <div id="onlineAccountStatus"></div>
+      <span class="quiz-badge">‼️ IMTIHON SAVOLLARI</span>
+      <h2>Maxsus imtihon testlari</h2>
+      <p>Prezident maktablari, Al-Xorazmiy va ixtisoslashtirilgan maktablarga tayyorgarlik uchun maxsus testlar. Har bir test alohida sotiladi.</p>
     </div>
-    <div id="premiumMessage" class="premium-status"></div>
-    <div id="premiumTestsGrid" class="premium-grid"></div>
+    <div class="premium-layout">
+      <div class="premium-card">
+        <h3>📚 Mavjud imtihon testlari</h3>
+        <p>Har bir testning narxi <b>30 000 so‘m</b>.</p>
+        <div class="premium-test-list">
+          <div class="premium-test-item"><div class="premium-test-icon">🎓</div><div><b>Prezident maktabi testi</b><span>Imtihon formatidagi maxsus savollar</span></div></div>
+          <div class="premium-test-item"><div class="premium-test-icon">📘</div><div><b>Al-Xorazmiy maktabi testi</b><span>Maxsus tayyorgarlik testi</span></div></div>
+          <div class="premium-test-item"><div class="premium-test-icon">🏫</div><div><b>Ixtisoslashtirilgan maktab testi</b><span>Imtihonga tayyorgarlik savollari</span></div></div>
+        </div>
+        <div class="premium-note">✅ To‘lovdan keyin testdan foydalanish bo‘yicha ma’lumot olish uchun telefon qiling.</div>
+      </div>
+      <div class="premium-card payment-box">
+        <h3>💳 To‘lov ma’lumotlari</h3>
+        <p><b>Bu testlar pullik.</b> Har bir test uchun to‘lov miqdori:</p>
+        <div class="premium-price">30 000 so‘m</div>
+        <p style="margin-bottom:6px"><b>Karta raqami:</b></p>
+        <div class="card-number" id="paymentCardNumberStatic">9860 1701 0569 3874</div>
+        <button class="copy-card-btn" onclick="copyPaymentCardStatic()">📋 Karta raqamini nusxalash</button>
+        <div class="payment-steps">
+          <div class="payment-step"><span class="step-num">1</span><div>Karta raqamiga <b>30 000 so‘m</b> to‘lov qiling.</div></div>
+          <div class="payment-step"><span class="step-num">2</span><div>To‘lov amalga oshirilgach, <b>330076688</b> raqamiga telefon qiling.</div></div>
+          <div class="payment-step"><span class="step-num">3</span><div>Qaysi test uchun to‘lov qilganingizni ayting va testdan foydalanish bo‘yicha ko‘rsatma oling.</div></div>
+        </div>
+        <div class="phone-box">📞 <b>To‘lovdan so‘ng telefon qiling:</b><br><strong>330076688</strong></div>
+      </div>
+    </div>
   </div>
 </section>
-
-<div id="online-auth-modal" class="online-modal">
-  <div class="online-card">
-    <h3 id="onlineAuthTitle">Online akkauntga kirish</h3>
-    <p id="onlineAuthText">Bir akkaunt bilan boshqa telefonlarda ham davom etishingiz mumkin.</p>
-    <div id="signupFields" style="display:none">
-      <label>Ism<input id="onlineFirst" type="text" placeholder="Ismingiz"></label>
-      <label>Familiya<input id="onlineLast" type="text" placeholder="Familiyangiz"></label>
-    </div>
-    <label>Email<input id="onlineEmail" type="email" placeholder="example@gmail.com" autocomplete="email"></label>
-    <label>Parol<input id="onlinePassword" type="password" placeholder="Kamida 6 ta belgi" autocomplete="current-password"></label>
-    <div class="online-actions">
-      <button class="premium-btn" onclick="submitOnlineAuth()">Kirish</button>
-      <button class="premium-btn alt" onclick="toggleOnlineSignup()" id="onlineToggle">Akkaunt yaratish</button>
-      <button class="premium-btn alt" onclick="closeOnlineAuth()">Bekor qilish</button>
-    </div>
-    <div id="onlineAuthError" class="online-error"></div>
-  </div>
-</div>
-
-<div id="receipt-modal" class="online-modal receipt-modal">
-  <div class="online-card">
-    <h3>To‘lov chekini yuborish</h3>
-    <p id="receiptTestName"></p>
-    <div class="premium-price">30 000 so‘m</div>
-    <div style="background:#f4f7fb;border-radius:14px;padding:14px;margin:12px 0">
-      <b>Karta:</b> <span id="paymentCardNumber">9860170105693874</span>
-      <button class="premium-btn alt" style="padding:7px 10px;margin-left:6px" onclick="copyPaymentCard()">📋 Nusxalash</button>
-      <div style="font-size:12px;color:#667085;margin-top:5px">Diyorbek Karimov</div>
-    </div>
-    <label>To‘lov cheki / screenshot
-      <input id="receiptFile" type="file" accept="image/*,.pdf">
-    </label>
-    <div class="online-actions">
-      <button class="premium-btn" onclick="submitReceipt()">Chekni yuborish</button>
-      <button class="premium-btn alt" onclick="closeReceiptModal()">Bekor qilish</button>
-    </div>
-    <div id="receiptError" class="online-error"></div>
-  </div>
-</div>
 
 <div id="student-start-modal" class="student-modal">
   <div class="student-modal-card">
@@ -1377,153 +1357,19 @@ async function shareGrammarResult(){
 </script>
 
 
-<script id="supabase-backend-integration">
-(function(){
-  'use strict';
-  let sb=null, onlineUser=null, onlineSignupMode=false, selectedPaymentTest=null, activePremiumTest=null;
-  const CFG=window.SUPABASE_CONFIG||{};
-  function setMsg(t){const e=document.getElementById('premiumMessage');if(e)e.textContent=t||''}
-  function escHtml(v){return String(v??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}
-  function ready(){
-    if(sb) return true;
-    if(!window.supabase||!CFG.url||!CFG.publishableKey||String(CFG.url).includes('YOUR-PROJECT')) return false;
-    sb=window.supabase.createClient(CFG.url,CFG.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
-    return true;
-  }
-  async function refreshUser(){
-    if(!ready()) return null;
-    const r=await sb.auth.getUser(); onlineUser=r.data?.user||null; return onlineUser;
-  }
-  function showAuth(){
-    const m=document.getElementById('online-auth-modal');if(m)m.style.display='flex';
-    document.getElementById('onlineAuthError').textContent='';
-  }
-  window.closeOnlineAuth=function(){document.getElementById('online-auth-modal').style.display='none'};
-  window.toggleOnlineSignup=function(){
-    onlineSignupMode=!onlineSignupMode;
-    document.getElementById('signupFields').style.display=onlineSignupMode?'block':'none';
-    document.getElementById('onlineAuthTitle').textContent=onlineSignupMode?'Akkaunt yaratish':'Online akkauntga kirish';
-    document.getElementById('onlineToggle').textContent=onlineSignupMode?'Menda akkaunt bor':'Akkaunt yaratish';
-    document.querySelector('#online-auth-modal .premium-btn').textContent=onlineSignupMode?'Ro‘yxatdan o‘tish':'Kirish';
-  };
-  window.submitOnlineAuth=async function(){
-    const err=document.getElementById('onlineAuthError');err.textContent='';
-    if(!ready()){err.textContent='Supabase sozlamasi topilmadi.';return}
-    const email=document.getElementById('onlineEmail').value.trim();
-    const password=document.getElementById('onlinePassword').value;
-    if(!email||password.length<6){err.textContent='Email va kamida 6 belgili parol kiriting.';return}
-    try{
-      if(onlineSignupMode){
-        const first=document.getElementById('onlineFirst').value.trim(),last=document.getElementById('onlineLast').value.trim();
-        if(!first||!last){err.textContent='Ism va familiya kerak.';return}
-        const r=await sb.auth.signUp({email,password,options:{data:{first_name:first,last_name:last,full_name:first+' '+last}}});
-        if(r.error)throw r.error;
-        onlineUser=r.data.user||null;
-        if(!r.data.session){err.textContent='Akkaunt yaratildi. Emailingizni tasdiqlang, keyin kiring.';return}
-      }else{
-        const r=await sb.auth.signInWithPassword({email,password});if(r.error)throw r.error;onlineUser=r.data.user;
-      }
-      document.getElementById('online-auth-modal').style.display='none';
-      await openPremium();
-    }catch(e){err.textContent=e.message||'Kirishda xatolik.'}
-  };
-  window.onlineLogout=async function(){if(ready())await sb.auth.signOut();onlineUser=null;openPremium()};
-  async function profile(){
-    if(!onlineUser)return null;
-    const r=await sb.from('profiles').select('*').eq('id',onlineUser.id).maybeSingle();
-    return r.data||null;
-  }
-  window.openPremium=async function(){
-    hideMain();hideAllViews();
-    const page=document.getElementById('premium-page');if(page)page.style.display='block';
-    try{window.scrollTo({top:0,behavior:'smooth'})}catch(e){window.scrollTo(0,0)}
-    const grid=document.getElementById('premiumTestsGrid');
-    if(!ready()){setMsg('Backend hali sozlanmagan.');grid.innerHTML='<div class="premium-card"><h3>Supabase ulanmagan</h3><p>supabase_config.js fayli tekshirilishi kerak.</p></div>';return}
-    await refreshUser();
-    const st=document.getElementById('onlineAccountStatus');
-    if(onlineUser){
-      const p=await profile();
-      st.innerHTML='<div class="account-pill">👤 '+escHtml(p?.full_name||onlineUser.email)+' <button class="premium-btn alt" style="padding:6px 9px;margin-left:4px" onclick="onlineLogout()">Chiqish</button></div>';
-    }else st.innerHTML='<button class="premium-btn" onclick="showAuthForPremium()">🔐 Online akkauntga kirish</button>';
-    const r=await sb.from('tests').select('*').eq('is_published',true).eq('is_paid',true).order('sort_order');
-    if(r.error){grid.innerHTML='<div class="premium-card"><h3>Xatolik</h3><p>'+escHtml(r.error.message)+'</p></div>';return}
-    let purchases={};
-    if(onlineUser){const pr=await sb.from('purchases').select('test_id').eq('user_id',onlineUser.id);(pr.data||[]).forEach(x=>purchases[x.test_id]=true)}
-    if(!r.data?.length){grid.innerHTML='<div class="premium-card"><h3>Premium testlar</h3><p>Hozircha yangi premium testlar joylanmagan.</p></div>';return}
-    grid.innerHTML=r.data.map(t=>{
-      const owned=!!purchases[t.id];
-      return '<div class="premium-card"><h3>'+escHtml(t.title)+'</h3><p>'+escHtml(t.category||'Premium test')+'</p><div class="premium-price">'+Number(t.price_uzs||30000).toLocaleString('uz-UZ')+' so‘m</div><div class="premium-status">⏱ '+Number(t.time_per_question_seconds||45)+' soniya / savol</div>'+
-      (owned?'<button class="premium-btn" onclick="startPremiumTest(\''+t.id+'\')">▶️ Testni boshlash</button>':'<button class="premium-btn" onclick="payForTest(\''+t.id+'\')">💳 To‘lov qilish</button>')+'</div>'
-    }).join('');
-  };
-  window.showAuthForPremium=function(){showAuth()};
-  window.payForTest=async function(id){
-    if(!ready())return;
-    await refreshUser();if(!onlineUser){showAuth();return}
-    const r=await sb.from('tests').select('*').eq('id',id).single();if(r.error){alert(r.error.message);return}
-    selectedPaymentTest=r.data;document.getElementById('receiptTestName').textContent=r.data.title;document.getElementById('receiptError').textContent='';document.getElementById('receiptFile').value='';document.getElementById('receipt-modal').style.display='flex';
-  };
-  window.closeReceiptModal=function(){document.getElementById('receipt-modal').style.display='none'};
-  window.copyPaymentCard=function(){navigator.clipboard?.writeText('9860170105693874');setMsg('Karta raqami nusxalandi.')};
-  window.submitReceipt=async function(){
-    const err=document.getElementById('receiptError');err.textContent='';
-    if(!onlineUser||!selectedPaymentTest){err.textContent='Avval akkauntga kiring.';return}
-    const file=document.getElementById('receiptFile').files[0];if(!file){err.textContent='Chek rasmini tanlang.';return}
-    if(file.size>8*1024*1024){err.textContent='Fayl 8 MB dan kichik bo‘lsin.';return}
-    try{
-      const safe=file.name.replace(/[^a-zA-Z0-9._-]/g,'_');const path=onlineUser.id+'/'+selectedPaymentTest.id+'/'+Date.now()+'-'+safe;
-      const up=await sb.storage.from('receipts').upload(path,file,{upsert:false,contentType:file.type||'application/octet-stream'});if(up.error)throw up.error;
-      const ins=await sb.from('payments').insert({user_id:onlineUser.id,test_id:selectedPaymentTest.id,amount_uzs:Number(selectedPaymentTest.price_uzs||30000),card_last4:'3874',receipt_url:path,status:'pending'});if(ins.error)throw ins.error;
-      closeReceiptModal();setMsg('✅ Chek yuborildi. Admin tasdiqlashini kuting.');
-    }catch(e){err.textContent=e.message||'Chek yuborilmadi.'}
-  };
-  window.startPremiumTest=async function(id){
-    if(!ready())return;await refreshUser();if(!onlineUser){showAuth();return}
-    const own=await sb.from('purchases').select('id').eq('user_id',onlineUser.id).eq('test_id',id).maybeSingle();if(!own.data){alert('Bu test hali ochilmagan.');return}
-    const tr=await sb.from('tests').select('*').eq('id',id).single();if(tr.error){alert(tr.error.message);return}
-    const qr=await sb.from('questions').select('*').eq('test_id',id).order('question_order');if(qr.error){alert(qr.error.message);return}
-    activePremiumTest={test:tr.data,questions:qr.data||[],index:0,answers:{},started:Date.now()};
-    renderPremiumQuestion();
-  };
-  function renderPremiumQuestion(){
-    const a=activePremiumTest;if(!a||!a.questions.length)return;
-    hideMain();hideAllViews();
-    let host=document.getElementById('premium-runner');
-    if(!host){host=document.createElement('section');host.id='premium-runner';host.className='grammar-test';document.body.appendChild(host)}
-    host.style.display='block';const q=a.questions[a.index];const opts=Array.isArray(q.options)?q.options:(typeof q.options==='object'?Object.values(q.options):[]);
-    host.innerHTML='<div class="quiz-back"><button onclick="openPremium()">← Premium</button></div><div class="quiz-wrap"><div class="quiz-head"><div><span class="quiz-badge">🔐 PREMIUM</span><h2>'+escHtml(a.test.title)+'</h2><p>Savol '+(a.index+1)+' / '+a.questions.length+'</p></div><div class="quiz-progress"><span id="premiumTimer">'+Number(a.test.time_per_question_seconds||45)+'</span> sec</div></div><div class="dash-panel"><h3>'+escHtml(q.question_text)+'</h3><div id="premiumOptions">'+opts.map((o,i)=>'<button class="premium-btn alt" style="display:block;width:100%;text-align:left;margin:10px 0" onclick="answerPremium('+i+')">'+String.fromCharCode(65+i)+'. '+escHtml(o)+'</button>').join('')+'</div></div></div>';
-    startPremiumTimer();
-  }
-  let timerHandle=null;
-  function startPremiumTimer(){clearInterval(timerHandle);let left=Number(activePremiumTest.test.time_per_question_seconds||45);const el=document.getElementById('premiumTimer');timerHandle=setInterval(()=>{left--;if(el)el.textContent=left;if(left<=0){clearInterval(timerHandle);answerPremium(null)}},1000)}
-  window.answerPremium=async function(i){clearInterval(timerHandle);const a=activePremiumTest,q=a.questions[a.index];a.answers[q.id]=i===null?null:i;await sb.from('progress').upsert({user_id:onlineUser.id,test_id:a.test.id,current_question:a.index+1,answers:a.answers,score:0,completed:false},{onConflict:'user_id,test_id'});if(a.index<a.questions.length-1){a.index++;renderPremiumQuestion()}else finishPremiumTest()};
-  async function finishPremiumTest(){
-    const a=activePremiumTest;let correct=0;for(const q of a.questions){const ans=a.answers[q.id];let ca=q.correct_answer;if(typeof ca==='string'&&/^[ABCD]$/.test(ca))ca='ABCD'.indexOf(ca);if(String(ans)===String(ca)||String(ans)===String(q.correct_answer))correct++}
-    const pct=Math.round(correct/a.questions.length*100);await sb.from('progress').upsert({user_id:onlineUser.id,test_id:a.test.id,current_question:a.questions.length,answers:a.answers,score:correct,completed:true},{onConflict:'user_id,test_id'});
-    clearInterval(timerHandle);activePremiumTest=null;hideAllViews();let host=document.getElementById('premium-runner');if(host)host.style.display='none';const page=document.getElementById('premium-page');if(page)page.style.display='block';setMsg('🎉 Test yakunlandi: '+correct+'/'+a.questions.length+' — '+pct+'%. Natija online saqlandi.');
-  }
-  // Admin: approve/reject payments from the existing Teacher Dashboard button.
-  window.renderOnlineAdminPayments=async function(){
-    if(!ready())return;await refreshUser();if(!onlineUser)return;
-    const p=await profile();if(p?.role!=='admin'){alert('Admin huquqi kerak.');return}
-    const r=await sb.from('payments').select('id,amount_uzs,status,receipt_url,created_at,admin_note,tests(title),profiles(full_name,email)').order('created_at',{ascending:false});
-    if(r.error){alert(r.error.message);return}
-    let box=document.getElementById('onlineAdminPayments');if(!box){box=document.createElement('div');box.id='onlineAdminPayments';box.className='dash-panel';document.getElementById('teacher-dashboard')?.querySelector('.dashboard-wrap')?.appendChild(box)}
-    box.innerHTML='<h3>💳 Online to‘lovlar</h3>'+(r.data||[]).map(x=>'<div style="border:1px solid #dce3ed;border-radius:14px;padding:14px;margin:10px 0"><b>'+escHtml(x.profiles?.full_name||x.profiles?.email||'Student')+'</b><br>'+escHtml(x.tests?.title||'Test')+' — '+Number(x.amount_uzs).toLocaleString('uz-UZ')+' so‘m<br>Status: <b>'+escHtml(x.status)+'</b><br><small>'+escHtml(x.receipt_url||'')+'</small><div style="margin-top:8px">'+(x.status==='pending'?'<button class="premium-btn" onclick="reviewPayment(\''+x.id+'\',\'approved\')">✅ Approve</button> <button class="premium-btn danger" onclick="reviewPayment(\''+x.id+'\',\'rejected\')">❌ Reject</button>':'')+'</div></div>').join('');
-  };
-  window.reviewPayment=async function(id,status){
-    if(!ready()||!onlineUser)return;const note=prompt(status==='approved'?'Izoh (ixtiyoriy):':'Reject sababi:','')??'';
-    const r=await sb.from('payments').update({status,admin_note:note,reviewed_at:new Date().toISOString()}).eq('id',id);if(r.error){alert(r.error.message);return}
-    if(status==='approved'){
-      const pay=await sb.from('payments').select('user_id,test_id,id').eq('id',id).single();if(pay.data)await sb.from('purchases').upsert({user_id:pay.data.user_id,test_id:pay.data.test_id,payment_id:pay.data.id},{onConflict:'user_id,test_id'});
-    }
-    renderOnlineAdminPayments();
-  };
-  // Extend existing teacher dashboard without replacing its local features.
-  const oldTeacher=window.showTeacherDashboard;
-  window.showTeacherDashboard=function(){if(typeof oldTeacher==='function')oldTeacher();setTimeout(()=>renderOnlineAdminPayments(),300)};
-  // Restore session on page load and keep status current.
-  if(ready())sb.auth.getSession().then(({data})=>{onlineUser=data?.session?.user||null});
-})();
+<script id="premium-static-functions">
+function openPremium(){
+  hideMain();
+  hideAllViews();
+  var page=document.getElementById('premium-page');
+  if(page) page.style.display='block';
+  try{window.scrollTo({top:0,behavior:'smooth'})}catch(e){window.scrollTo(0,0)}
+}
+function copyPaymentCardStatic(){
+  var card='9860170105693874';
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(card).then(function(){alert('✅ Karta raqami nusxalandi.')}).catch(function(){alert('Karta raqami: '+card)});
+  }else{alert('Karta raqami: '+card)}
+}
 </script>
 </body></html>
