@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://karimovsteams-cmd.github.io/presidential-school-tests-prezident-maktabi-testlari-kirish-imtihon-maktablar/sitemap.xml
